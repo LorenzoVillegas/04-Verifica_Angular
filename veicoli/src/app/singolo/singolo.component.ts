@@ -8,10 +8,15 @@ import { Veicolo } from './singolo.module';
 })
 export class SingoloComponent implements OnInit {
   @Input() veicolo: Veicolo;
+  rangeValue: number = 0;
+
   constructor() {
 
   }
 
+  onNew() {
+    this.veicolo.setPrezzo(this.rangeValue)
+  }
   ngOnInit() {
 
   }

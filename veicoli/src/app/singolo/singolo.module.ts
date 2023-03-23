@@ -12,4 +12,8 @@ export class Veicolo {
         this.prezzo = prezzo;
         this.velocitamax = velocitamax;
     }
+
+    setPrezzo(prezzo: number){
+        this.prezzo = prezzo;
+    }
 }
